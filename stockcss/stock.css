@@ -1,0 +1,1196 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+
+
+:root {
+    --white: white;
+    --green: green;
+    --lightGreen: lightgreen;
+    --lightGrey:lightgrey;
+    --skyBlue: skyblue;
+    --dodgerBlue: dodgerBlue;
+    --black:black;
+    --grey: gray;
+    --fontSize: 1rem;
+    --fontSizeTwo: 1.5rem;
+    --doubleFontSize: 2rem;
+    --fontFamily: 'Arial';
+    --whitesmoke: whitesmoke
+
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+body {
+    height: auto;
+    margin:0;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+
+
+
+/*------------------------HEADER---------------------------*/
+
+
+.top-content {
+    position: relative;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--fontSizeTwo);
+}
+
+
+.top-content img {
+    object-fit: contain;
+    height: 50px;
+    margin:0px 15px
+}
+
+
+.top-content h1 {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+/*------------------------NAVBAR---------------------------*/
+
+.content-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+ 
+    
+}
+
+
+
+
+
+
+.content-nav button {
+    border:none;
+    outline:none;
+    background: none;
+    font-size: var(--fontSizeTwo);
+    cursor: pointer;
+    
+}
+
+.content-nav img {
+    width: 90px;
+    height: 30px;
+    object-fit: contain;
+    
+}
+
+
+
+.home-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.3s linear;
+    color:var(--black);
+}
+
+
+
+
+
+
+.stock-btn:not(.home-btn, .crypto-btn, .fund-btn, .forex-btn) {
+    border-bottom: 3px solid green;
+    color:var(--black)
+}
+
+
+.crypto-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+.fund-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+.forex-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------CONTENT--------------------------------------------------------------*/
+
+
+.Grid-Container {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--black);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container div {
+    color:var(--white)
+}
+
+
+
+.stock-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+.stock-name-text {
+    font-size: 2rem;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+.stock-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+.stock-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+
+
+.stock-price-text {
+    color:var(--white);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+
+.stock-price-currency {
+    color:whitesmoke;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+.stock-range {
+   position: absolute;
+   top:324px;
+   left: 345px;
+   font-size: 1.2rem;
+}
+
+
+
+.stock-range-text {
+    color:lightgreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+.Grid-Container-Content .about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+
+.grid-content-wrapper .ceo,
+.grid-content-wrapper .sector,
+.grid-content-wrapper .industry,
+.grid-content-wrapper .website,
+.grid-content-wrapper .exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.grid-content-wrapper .ceo-text,
+.grid-content-wrapper .sector-text,
+.grid-content-wrapper .industry-text,
+.grid-content-wrapper .website-text,
+.grid-content-wrapper .exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.description:not(.description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+p.description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+
+
+
+
+
+.Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -319px;
+    overflow: hidden;
+}
+
+
+
+.Right-Side-Wrapper .CIK,
+.Right-Side-Wrapper .ISIN,
+.Right-Side-Wrapper .CUSIP,
+.Right-Side-Wrapper .Address,
+.Right-Side-Wrapper .Phone,
+.Right-Side-Wrapper .Country,
+.Right-Side-Wrapper .Employee,
+.Right-Side-Wrapper .IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------AMAZON CONTENT----------------------------------------------------------------*/
+
+.Grid-Container-Two {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--black);
+    margin-block: 45px;
+    overflow: hidden;
+}
+
+
+
+.Grid-Container-Two img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container-Two div {
+    color:var(--white)
+}
+
+
+
+.Grid-Container-Two .amazon-image img {
+    margin-top: 60px;
+    margin-left: 50px;
+    max-width: 300px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.amazon-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+.amazon-name h3 {
+    font-size: 2rem;
+}
+
+.amazon-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 160px;
+}
+
+
+.amazon-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.amazon-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.amazon-stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 70px;
+}
+
+
+
+
+.amazon-stock-price-text {
+    color:var(--white);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+
+.amazon-stock-price-currency {
+    color:whitesmoke;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+
+
+.amazon-stock-range {
+    position: absolute;
+    top:1145px;
+    left: 325px;
+    font-size: 1.2rem;
+ }
+ 
+ 
+ 
+ .amazon-stock-range-text {
+     color:lightgreen;
+     font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+
+
+
+
+
+
+
+.Amazon-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+
+
+.Amazon-Grid-Container-Content .amazon-about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+
+
+.amazon-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+.amazon-grid-content-wrapper .amazon-ceo,
+.amazon-grid-content-wrapper .amazon-sector,
+.amazon-grid-content-wrapper .amazon-industry,
+.amazon-grid-content-wrapper .amazon-website,
+.amazon-grid-content-wrapper .amazon-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+.amazon-grid-content-wrapper .amazon-ceo-text,
+.amazon-grid-content-wrapper .amazon-sector-text,
+.amazon-grid-content-wrapper .amazon-industry-text,
+.amazon-grid-content-wrapper .amazon-website-text,
+.amazon-grid-content-wrapper .amazon-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+
+.amazon-description:not(.amazon-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+
+
+p.amazon-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+.Amazon-Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -280px;
+    overflow: hidden;
+}
+
+
+
+
+.Amazon-Right-Side-Wrapper .Amazon-CIK,
+.Amazon-Right-Side-Wrapper .Amazon-ISIN,
+.Amazon-Right-Side-Wrapper .Amazon-CUSIP,
+.Amazon-Right-Side-Wrapper .Amazon-Address,
+.Amazon-Right-Side-Wrapper .Amazon-Phone,
+.Amazon-Right-Side-Wrapper .Amazon-Country,
+.Amazon-Right-Side-Wrapper .Amazon-Employee,
+.Amazon-Right-Side-Wrapper .Amazon-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.Amazon-Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+/*----------------------------------------GOOGLE CONTENT--------------------------------------------------------*/
+
+
+
+.Grid-Container-Three {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--black);
+    margin-block: 45px;
+    overflow: hidden;
+}
+
+
+
+
+.Grid-Container-Three img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container-Three div {
+    color:var(--white)
+}
+
+
+
+.google-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+
+.google-name h3 {
+    font-size: 2rem;
+}
+
+
+.google-name-text {
+    font-size: 2rem;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+
+.google-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 160px;
+}
+
+
+
+.google-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.google-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+
+.google-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.google-stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 160px;
+}
+
+
+
+.google-stock-price-text {
+    color:var(--white);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+
+.google-stock-price-currency {
+    color:whitesmoke;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+.google-stock-range {
+    position: absolute;
+    top:1906px;
+    left: 340px;
+    font-size: 1.2rem;
+ }
+ 
+ 
+ 
+ .google-stock-range-text {
+     color:lightgreen;
+     font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+
+
+
+ .Google-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+
+
+.Google-Grid-Container-Content .google-about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+
+
+
+.google-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+.google-grid-content-wrapper .google-ceo,
+.google-grid-content-wrapper .google-sector,
+.google-grid-content-wrapper .google-industry,
+.google-grid-content-wrapper .google-website,
+.google-grid-content-wrapper .google-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.google-grid-content-wrapper .google-ceo-text,
+.google-grid-content-wrapper .google-sector-text,
+.google-grid-content-wrapper .google-industry-text,
+.google-grid-content-wrapper .google-website-text,
+.google-grid-content-wrapper .google-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+
+.google-description:not(.google-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+
+
+p.google-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+.Google-Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -270px;
+    overflow: hidden;
+}
+
+
+
+.Google-Right-Side-Wrapper .Google-CIK,
+.Google-Right-Side-Wrapper .Google-ISIN,
+.Google-Right-Side-Wrapper .Google-CUSIP,
+.Google-Right-Side-Wrapper .Google-Address,
+.Google-Right-Side-Wrapper .Google-Phone,
+.Google-Right-Side-Wrapper .Google-Country,
+.Google-Right-Side-Wrapper .Google-Employee,
+.Google-Right-Side-Wrapper .Google-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.Google-Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------META CONTENT--------------------------------------------------------*/
+
+
+.Grid-Container-Four {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+}
+
+
+
+.Grid-Container-Four img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container-Four div {
+    color:var(--black)
+}
+
+
+
+.meta-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+.meta-name h3 {
+    font-size: 2rem;
+}
+
+
+.meta-name-text {
+    font-size: 2rem;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.meta-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 160px;
+}
+
+
+.meta-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.meta-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+
+.meta-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.meta-stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 70px;
+}
+
+
+
+.meta-stock-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+
+.meta-stock-price-currency {
+    color:var(--black);
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+.meta-stock-range {
+    position: absolute;
+    top:2695px;
+    left: 350px;
+    font-size: 1.2rem;
+ }
+ 
+ 
+ 
+ .meta-stock-range-text {
+     color:lightgreen;
+     font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+
+
+
+ .Meta-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+
+
+.Meta-Grid-Container-Content .meta-about-header {
+    margin-top: 45px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+
+
+
+.meta-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+
+
+.meta-grid-content-wrapper .meta-ceo,
+.meta-grid-content-wrapper .meta-sector,
+.meta-grid-content-wrapper .meta-industry,
+.meta-grid-content-wrapper .meta-website,
+.meta-grid-content-wrapper .meta-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.meta-grid-content-wrapper .meta-ceo-text,
+.meta-grid-content-wrapper .meta-sector-text,
+.meta-grid-content-wrapper .meta-industry-text,
+.meta-grid-content-wrapper .meta-website-text,
+.meta-grid-content-wrapper .meta-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+
+.meta-description:not(.meta-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+
+
+p.meta-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:black
+    
+}
+
+
+
+.Meta-Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -310px;
+    overflow: hidden;
+}
+
+
+
+.Meta-Right-Side-Wrapper .Meta-CIK,
+.Meta-Right-Side-Wrapper .Meta-ISIN,
+.Meta-Right-Side-Wrapper .Meta-CUSIP,
+.Meta-Right-Side-Wrapper .Meta-Address,
+.Meta-Right-Side-Wrapper .Meta-Phone,
+.Meta-Right-Side-Wrapper .Meta-Country,
+.Meta-Right-Side-Wrapper .Meta-Employee,
+.Meta-Right-Side-Wrapper .Meta-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.Meta-Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
