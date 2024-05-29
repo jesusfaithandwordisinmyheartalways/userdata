@@ -1,0 +1,857 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+
+
+
+:root {
+    --white: white;
+    --green: green;
+    --lightGreen: lightgreen;
+    --lightGrey:lightgrey;
+    --skyBlue: skyblue;
+    --dodgerBlue: dodgerBlue;
+    --black:black;
+    --grey: gray;
+    --fontSize: 1rem;
+    --fontSizeTwo: 1.5rem;
+    --doubleFontSize: 2rem;
+    --fontFamily: 'Arial';
+    --whitesmoke: whitesmoke
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+
+
+body {
+    height: auto;
+    margin:0;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+/*------------------------HEADER---------------------------*/
+
+
+.top-content {
+    position: relative;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--fontSizeTwo);
+}
+
+
+.top-content img {
+    object-fit: contain;
+    height: 50px;
+    margin:0px 15px
+}
+
+
+.top-content h1 {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------NAVBAR---------------------------*/
+
+.content-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+ 
+    
+}
+
+
+
+
+
+
+.content-nav button {
+    border:none;
+    outline:none;
+    background: none;
+    font-size: var(--fontSizeTwo);
+    cursor: pointer;
+    
+}
+
+.content-nav img {
+    width: 90px;
+    height: 30px;
+    object-fit: contain;
+    
+}
+
+
+
+.home-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.3s linear;
+    color:var(--black);
+}
+
+
+.stock-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+.fund-btn:hover {
+    border-bottom: 3px solid green;
+    color:var(--black);
+    transition: 0.5s linear;
+}
+
+
+.crypto-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+.fund-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+.forex-btn:not(.home-btn, .crypto-btn, .stock-btn, .fund-btn){
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+
+
+
+
+/*------------------------CONTENT--------------------------------------------------------------*/
+
+
+
+
+.Grid-Container {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container div {
+    color:var(--black)
+}
+
+
+
+.aud-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.aud-name-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.aud-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+.aud-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.aud-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.aud-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 190px;
+}
+
+
+.aud-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+.aud-price-change {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:seagreen
+}
+
+
+
+.aud-change-percentage {
+    position: absolute;
+    top:328px;
+    left: 340px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.aud-percentage:before {
+    content: "("
+}
+
+.aud-percentage:after {
+    content: ")"
+}
+
+
+
+
+
+
+.aud-percentage {
+    color:darkgreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.aud-previous-close {
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.aud-previous-close-text {
+    margin-left: 320px;
+    margin-top: -18px;
+    font-size: 1.1rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    color:var(--white)
+
+}
+
+
+
+
+
+.Grid-Container-Content {
+    display: grid;
+    align-content:center;
+    gap:10px;
+    background-color:var(--lightGrey);
+    border-radius:10px;
+    height: 420px;
+    max-width: 1000px;
+    text-align: center;
+    overflow-x: hidden;
+    margin-top: -30px;
+
+}
+
+.aud-header-text {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: none;
+}
+
+
+.aud-grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: space-evenly;
+    gap:60px
+}
+
+
+
+
+.aud-grid-content .AUD-Market-Cap,
+.aud-grid-content .AUD-Volume,
+.aud-grid-content .AUD-Open,
+.aud-grid-content .AUD-Avg-Volume,
+.aud-grid-content .AUD-Day-High,
+.aud-grid-content .AUD-Day-Low,
+.aud-grid-content .AUD-Year-High,
+.aud-grid-content .AUD-Year-Low {
+    font-weight: bold;
+    color:var(--black);
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.aud-grid-content .aud-market-cap-text,
+.aud-grid-content .aud-volume-text,
+.aud-grid-content .aud-open-text,
+.aud-grid-content .aud-avg-volume-text,
+.aud-grid-content .aud-day-high-text,
+.aud-grid-content .aud-day-low-text,
+.aud-grid-content .aud-year-low-text,
+.aud-grid-content .aud-year-high-text
+{
+    color:var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------AED CONTENT--------------------------------------------------------------*/
+
+
+
+
+.Grid-Container-Two {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container-Two img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container-Two div {
+    color:var(--black)
+}
+
+
+
+.aed-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.aed-name-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.aed-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+.aed-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.aed-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.aed-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+
+
+.aed-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+.aed-price-change {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkgreen
+}
+
+
+
+.aed-change-percentage {
+    position: absolute;
+    top:1089px;
+    left: 360px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.aed-percentage:before {
+    content: "("
+}
+
+.aed-percentage:after {
+    content: ")"
+}
+
+
+
+
+
+
+.aed-percentage {
+    color:seagreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.aed-previous-close {
+    margin-left: 210px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.aed-previous-close-text {
+    margin-left: 325px;
+    margin-top: -18px;
+    font-size: 1.1rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    color:var(--white)
+
+}
+
+
+
+
+
+.Grid-Container-Content-Two {
+    display: grid;
+    align-content:center;
+    gap:10px;
+    background-color:var(--lightGrey);
+    border-radius:10px;
+    height: 420px;
+    max-width: 1000px;
+    text-align: center;
+    overflow-x: hidden;
+    margin-top: -30px;
+
+}
+
+.aed-header-text {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: none;
+}
+
+
+.aed-grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: space-evenly;
+    gap:60px
+}
+
+
+
+
+.aed-grid-content .AED-Market-Cap,
+.aed-grid-content .AED-Volume,
+.aed-grid-content .AED-Open,
+.aed-grid-content .AED-Avg-Volume,
+.aed-grid-content .AED-Day-High,
+.aed-grid-content .AED-Day-Low,
+.aed-grid-content .AED-Year-High,
+.aed-grid-content .AED-Year-Low {
+    font-weight: bold;
+    color:var(--black);
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.aed-grid-content .aed-market-cap-text,
+.aed-grid-content .aed-volume-text,
+.aed-grid-content .aed-open-text,
+.aed-grid-content .aed-avg-volume-text,
+.aed-grid-content .aed-day-high-text,
+.aed-grid-content .aed-day-low-text,
+.aed-grid-content .aed-year-low-text,
+.aed-grid-content .aed-year-high-text
+{
+    color:var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------AEDGBP CONTENT--------------------------------------------------------------*/
+
+
+
+
+
+
+
+.Grid-Container-Three {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container-Three img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+
+.Grid-Container-Three div {
+    color:var(--black)
+}
+
+
+
+.aedgbp-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.aedgbp-name-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.aedgbp-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+
+
+.aedgbp-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+}
+
+
+.aedgbp-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.aedgbp-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: 213px;
+}
+
+
+.aedgbp-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+.aedgbp-price-change {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:seagreen;
+}
+
+
+
+
+.aedgbp-change-percentage {
+    position: absolute;
+    top:1848px;
+    left: 360px;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.aedgbp-percentage:before {
+    content: "("
+}
+
+.aedgbp-percentage:after {
+    content: ")"
+}
+
+
+
+
+
+
+.aedgbp-percentage {
+    color:darkgreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.aedgbp-previous-close {
+    margin-left: 210px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.aedgbp-previous-close-text {
+    margin-left: 330px;
+    margin-top: -18px;
+    font-size: 1rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    color:var(--white)
+
+}
+
+
+
+
+.Grid-Container-Content-Three {
+    display: grid;
+    align-content:center;
+    gap:10px;
+    background-color:var(--lightGrey);
+    border-radius:10px;
+    height: 420px;
+    max-width: 1000px;
+    text-align: center;
+    overflow-x: hidden;
+    margin-top: -30px;
+
+}
+
+.aedgbp-header-text {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: none;
+}
+
+
+.aedgbp-grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: space-evenly;
+    gap:60px
+}
+
+
+
+
+.aedgbp-grid-content .AEDGBP-Market-Cap,
+.aedgbp-grid-content .AEDGBP-Volume,
+.aedgbp-grid-content .AEDGBP-Open,
+.aedgbp-grid-content .AEDGBP-Avg-Volume,
+.aedgbp-grid-content .AEDGBP-Day-High,
+.aedgbp-grid-content .AEDGBP-Day-Low,
+.aedgbp-grid-content .AEDGBP-Year-High,
+.aedgbp-grid-content .AEDGBP-Year-Low {
+    font-weight: bold;
+    color:var(--black);
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.aedgbp-grid-content .aedgbp-market-cap-text,
+.aedgbp-grid-content .aedgbp-volume-text,
+.aedgbp-grid-content .aedgbp-open-text,
+.aedgbp-grid-content .aedgbp-avg-volume-text,
+.aedgbp-grid-content .aedgbp-day-high-text,
+.aedgbp-grid-content .aedgbp-day-low-text,
+.aedgbp-grid-content .aedgbp-year-low-text,
+.aedgbp-grid-content .aedgbp-year-high-text
+{
+    color:var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}

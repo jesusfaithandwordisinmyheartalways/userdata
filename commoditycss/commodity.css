@@ -1,0 +1,1011 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
+
+
+
+
+:root {
+    --white: white;
+    --green: green;
+    --lightGreen: lightgreen;
+    --lightGrey:lightgrey;
+    --skyBlue: skyblue;
+    --dodgerBlue: dodgerBlue;
+    --black:black;
+    --grey: gray;
+    --fontSize: 1rem;
+    --fontSizeTwo: 1.5rem;
+    --doubleFontSize: 2rem;
+    --fontFamily: 'Arial';
+    --whitesmoke: whitesmoke
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+
+
+body {
+    height: auto;
+    margin:0;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+
+
+/*------------------------HEADER---------------------------*/
+
+
+.top-content {
+    position: relative;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--fontSizeTwo);
+}
+
+
+.top-content img {
+    object-fit: contain;
+    height: 50px;
+    margin:0px 15px
+}
+
+
+.top-content h1 {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+/*------------------------NAVBAR---------------------------*/
+
+.content-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+ 
+    
+}
+
+
+
+
+
+
+.content-nav button {
+    border:none;
+    outline:none;
+    background: none;
+    font-size: var(--fontSizeTwo);
+    cursor: pointer;
+    
+}
+
+.content-nav img {
+    width: 90px;
+    height: 30px;
+    object-fit: contain;
+    
+}
+
+
+
+.home-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.3s linear;
+    color:var(--black);
+}
+
+
+.stock-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+
+
+.fund-btn:not(.home-btn, .crypto-btn, .stock-btn, .forex-btn) {
+    border-bottom: 3px solid green;
+    color:var(--black)
+}
+
+
+.crypto-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+.fund-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+.forex-btn:hover {
+    border-bottom: 3px solid green;
+    transition: 0.5s linear;
+    color:var(--black)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------CONTENT--------------------------------------------------------------*/
+
+
+.Grid-Container {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container div {
+    color:var(--black)
+}
+
+
+
+.pdbc-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.pdbc-name-text {
+    font-size: 2rem;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.pdbc-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 120px;
+}
+
+
+
+
+.pdbc-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.pdbc-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.pdbc-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: -650px;
+}
+
+
+.pdbc-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+.pdbc-price-currency {
+    color:var(--black);
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+.pdbc-range {
+   position: absolute;
+   top:325px;
+   left: 310px;
+   font-size: 1.3rem;
+}
+
+
+
+.pdbc-range-text {
+    color:seagreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.pdbc-percentage {
+    margin-top: -20px;
+    margin-left: 360px;
+    font-size: 1.2rem;
+    
+}
+
+.pdbc-percentage-text {
+    color:darkgreen
+}
+
+.pdbc-percentage-text:before {
+    content: '('
+}
+
+.pdbc-percentage-text:after {
+    content: ')'
+}
+
+
+.pdbc-previous-close {
+    position: absolute;
+    top:360px;
+    left: 210px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pdbc-previous-close-text:not(.pdbc-previous-close) {
+    color:var(--green)
+}
+
+.pdbc-previous-close-text:before {
+    content: '$'
+}
+
+
+
+
+
+
+
+.Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+.Grid-Container-Content .about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+.grid-content-wrapper .pdbc-ceo,
+.grid-content-wrapper .pdbc-sector,
+.grid-content-wrapper .pdbc-industry,
+.grid-content-wrapper .pdbc-website,
+.grid-content-wrapper .pdbc-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.grid-content-wrapper .pdbc-ceo-text,
+.grid-content-wrapper .pdbc-sector-text,
+.grid-content-wrapper .pdbc-industry-text,
+.grid-content-wrapper .pdbc-website-text,
+.grid-content-wrapper .pdbc-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.pdbc-description:not(.pdbc-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+p.pdbc-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+.Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -240px;
+    overflow: hidden;
+}
+
+
+
+.Right-Side-Wrapper .PDBC-CIK,
+.Right-Side-Wrapper .PDBC-ISIN,
+.Right-Side-Wrapper .PDBC-CUSIP,
+.Right-Side-Wrapper .PDBC-Address,
+.Right-Side-Wrapper .PDBC-Phone,
+.Right-Side-Wrapper .PDBC-Country,
+.Right-Side-Wrapper .PDBC-Employee,
+.Right-Side-Wrapper .PDBC-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------- FTGC CONTENT--------------------------------------------------------------*/
+
+
+
+
+
+.Grid-Container-Two {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container-Two img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container-Two div {
+    color:var(--black)
+}
+
+
+
+.ftgc-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.ftgc-name-text {
+    font-size: 2rem;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.ftgc-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 120px;
+}
+
+
+
+
+.ftgc-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.ftgc-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.ftgc-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: -440px;
+}
+
+
+
+.ftgc-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+.ftgc-price-currency {
+    color:var(--black);
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+.ftgc-range {
+   position: absolute;
+   top:1115px;
+   left: 306px;
+   font-size: 1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.ftgc-range-text {
+    color:seagreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.ftgc-percentage {
+    margin-top: -21px;
+    margin-left: 351px;
+    font-size: 1.2rem;
+    
+}
+
+.ftgc-percentage-text {
+    color:darkgreen
+}
+
+
+.ftgc-previous-close {
+    position: absolute;
+    top:1150px;
+    left: 210px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    
+}
+
+.ftgc-previous-close-text {
+    color:green;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ftgc-previous-close-text:before {
+    content: "$"
+}
+
+.ftgc-percentage-text:before {
+    content: "("
+}
+
+.ftgc-percentage-text:after{
+    content: ")"
+}
+
+.ftgc-previous-close:not(.ftgc-previous-close-text) {
+    color:var(--black)
+}
+
+
+
+
+
+
+
+.Grid-Container-Content-Two {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+.Grid-Container-Content-Two .ftgc-about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.ftgc-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+.ftgc-grid-content-wrapper .ftgc-ceo,
+.ftgc-grid-content-wrapper .ftgc-sector,
+.ftgc-grid-content-wrapper .ftgc-industry,
+.ftgc-grid-content-wrapper .ftgc-website,
+.ftgc-grid-content-wrapper .ftgc-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.ftgc-grid-content-wrapper .ftgc-ceo-text,
+.ftgc-grid-content-wrapper .ftgc-sector-text,
+.ftgc-grid-content-wrapper .ftgc-industry-text,
+.ftgc-grid-content-wrapper .ftgc-website-text,
+.ftgc-grid-content-wrapper .ftgc-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.ftgc-description:not(.ftgc-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+p.ftgc-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+.FTGC-Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -210px;
+    overflow: hidden;
+}
+
+
+
+.FTGC-Right-Side-Wrapper .FTGC-CIK,
+.FTGC-Right-Side-Wrapper .FTGC-ISIN,
+.FTGC-Right-Side-Wrapper .FTGC-CUSIP,
+.FTGC-Right-Side-Wrapper .FTGC-Address,
+.FTGC-Right-Side-Wrapper .FTGC-Phone,
+.FTGC-Right-Side-Wrapper .FTGC-Country,
+.FTGC-Right-Side-Wrapper .FTGC-Employee,
+.FTGC-Right-Side-Wrapper .FTGC-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.FTGC-Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------- DB COMMODITY CONTENT--------------------------------------------------------------*/
+
+
+
+.Grid-Container-Three {
+    display: grid;
+    align-content: start;
+    justify-content:start;
+    width: 100%;
+    height: 280px;
+    background-color: var(--white);
+    margin-block: 45px;
+    overflow: hidden;
+
+}
+
+
+.Grid-Container-Three img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 120px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container-Three div {
+    color:var(--black)
+}
+
+
+
+.db-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+
+.db-name-text {
+    font-size: 2rem;
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+.db-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 120px;
+}
+
+
+
+
+.db-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.db-text-border {
+    color:lightgrey;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.db-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 0px;
+    margin-left: -330px;
+}
+
+
+
+
+
+.db-price-text {
+    color:var(--black);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+
+
+.db-price-currency {
+    color:var(--black);
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+.db-range {
+   position: absolute;
+   top:1905px;
+   left: 306px;
+   font-size: 1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.db-range-text {
+    color:seagreen;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.db-percentage {
+    margin-top: -21px;
+    margin-left: 351px;
+    font-size: 1.2rem;
+   
+    
+}
+
+.db-percentage-text {
+    color:var(--green)
+}
+
+.db-percentage-text:before {
+    content: "("
+}
+.db-percentage-text:after {
+    content: ")"
+}
+
+.db-previous-close {
+    margin-left: 203px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.Grid-Container-Content-Three {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 420px;
+    border-radius:10px;
+    max-width: 95%;
+}
+
+.Grid-Container-Content-Three .db-about-header {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.db-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    align-content:baseline;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 20px;
+}
+
+.db-grid-content-wrapper .db-ceo,
+.db-grid-content-wrapper .db-sector,
+.db-grid-content-wrapper .db-industry,
+.db-grid-content-wrapper .db-website,
+.db-grid-content-wrapper .db-exchange{
+    font-weight: 500;
+    color:black;
+    font-weight: bold;
+}
+
+
+.db-grid-content-wrapper .db-ceo-text,
+.db-grid-content-wrapper .db-sector-text,
+.db-grid-content-wrapper .db-industry-text,
+.db-grid-content-wrapper .db-website-text,
+.db-grid-content-wrapper .db-exchange-text{
+    font-weight: 500;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.db-description:not(.db-description-text) {
+    color:var(--black);
+    font-weight: bold;
+    margin-left: 18px;
+    
+}
+
+p.db-description-text  {
+    max-width: 850px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategray
+    
+}
+
+
+
+.DB-Right-Side-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center;
+    justify-content: center;
+    gap:10px;
+    height: 200px;
+    max-width: 430px;
+    margin-left: 1000px;
+    margin-top: -240px;
+    overflow: hidden;
+}
+
+
+
+.DB-Right-Side-Wrapper .DB-CIK,
+.DB-Right-Side-Wrapper .DB-ISIN,
+.DB-Right-Side-Wrapper .DB-CUSIP,
+.DB-Right-Side-Wrapper .DB-Address,
+.DB-Right-Side-Wrapper .DB-Phone,
+.DB-Right-Side-Wrapper .DB-Country,
+.DB-Right-Side-Wrapper .DB-Employee,
+.DB-Right-Side-Wrapper .DB-IPO-DATE 
+{
+    color:var(--black);
+    font-weight: bold;
+}
+
+
+
+.DB-Right-Side-Wrapper p {
+    color:slategray;
+    font-weight: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
