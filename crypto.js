@@ -6,7 +6,7 @@
 
   const cryptoData = async () => {
         try {
-            const cryptoAPI_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8'
+            const cryptoAPI_KEY = ''
             const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${cryptoAPI_KEY}`);
             const responseTwo = await fetch(`https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${cryptoAPI_KEY}`);
             const response3 = await fetch(`https://financialmodelingprep.com/api/v3/quote/T99USD?apikey=${cryptoAPI_KEY}`);
@@ -70,9 +70,9 @@
         }
   }
 
-
+    
+      
    
-
 
   
  

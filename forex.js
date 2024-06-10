@@ -6,7 +6,7 @@
 
 async function forexData() {
     try {
-        const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8'
+        const API_KEY = ''
         const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/AUDTHB?apikey=${API_KEY}`);
         const response2 = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDDKK?apikey=${API_KEY}`);
         const response3 = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDGBP?apikey=${API_KEY}`);
@@ -71,9 +71,8 @@ async function forexData() {
     }
 }
        
- 
   
-
+    
     
 
 

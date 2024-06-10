@@ -111,9 +111,9 @@ body {
 }
 
 .content-nav img {
-    width: 90px;
-    height: 30px;
     object-fit: contain;
+    width: 30px;
+    height: 30px;
     
 }
 

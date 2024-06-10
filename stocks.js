@@ -8,7 +8,7 @@
 
    async function stockData() {
         try {
-            const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8'
+            const API_KEY = ''
             const response = await fetch(`https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=${API_KEY}`)
             const responseTwo = await fetch(`https://financialmodelingprep.com/api/v3/profile/AMZN?apikey=${API_KEY}`)
             const response3 = await fetch(`https://financialmodelingprep.com/api/v3/profile/GOOG?apikey=${API_KEY}`)
@@ -122,15 +122,97 @@
         }
    }
 
+
+   
+
+
+
+
+
+
+
+
+
+
+        async function NewsData() {
+                try {
+                        const NEWS_KEY = '9d01c2b51c754635874c6f552ad70072';
+                        const response = await fetch(`https://newsapi.org/v2/everything?q=apple&from=2024-06-01&to=2024-06-01&sortBy=popularity&apiKey=${NEWS_KEY}`);
+                        const Apple = await response.json()
+                        console.log(Apple);
+
+                        const responseTwo = await fetch(`https://newsapi.org/v2/everything?q=amazon&from=2024-06-01&to=2024-06-01&sortBy=popularity&apiKey=${NEWS_KEY}`)
+                        const Amazon = await responseTwo.json()
+                        console.log(Amazon)
+
+                        const response3 = await fetch(`https://newsapi.org/v2/everything?q=google&from=2024-06-01&to=2024-06-01&sortBy=popularity&apiKey=${NEWS_KEY}`)
+                        const Google = await response3.json()
+                        console.log(Google)
+
+
+                        const response4 = await fetch(`https://newsapi.org/v2/everything?q=meta&from=2024-06-01&to=2024-06-01&sortBy=popularity&apiKey=${NEWS_KEY}`)
+                        const Meta = await response4.json()
+                        console.log(Meta)
+
+
+                        document.querySelector('.apple-title').innerHTML = Apple.articles[0].title;
+                        document.querySelector('.apple-site-name').innerHTML = Apple.articles[0].source.name;
+                        document.querySelector('.apple-news-link').href = Apple.articles[0].url;
+                        document.querySelector('.apple-title-two').innerHTML = Apple.articles[1].title;
+                        document.querySelector('.apple-site-name-two').innerHTML = Apple.articles[1].source.name;
+                        document.querySelector('.apple-news-link-two').href = Apple.articles[1].url;
+                        document.querySelector('.apple-title-three').innerHTML = Apple.articles[6].title;
+                        document.querySelector('.apple-site-name-three').innerHTML = Apple.articles[6].source.name;
+                        document.querySelector('.apple-news-link-three').href = Apple.articles[6].url;
+
+
+                        document.querySelector('.amazon-title').innerHTML = Amazon.articles[0].title;
+                        document.querySelector('.amazon-site-name').innerHTML = Amazon.articles[0].source.name;
+                        document.querySelector('.amazon-news-link').href = Amazon.articles[0].url;
+                        document.querySelector('.amazon-title-two').innerHTML = Amazon.articles[1].title;
+                        document.querySelector('.amazon-site-name-two').innerHTML = Amazon.articles[1].source.name;
+                        document.querySelector('.amazon-news-link-two').href = Amazon.articles[1].url;
+                        document.querySelector('.amazon-title-three').innerHTML = Amazon.articles[2].title;
+                        document.querySelector('.amazon-site-name-three').innerHTML = Amazon.articles[2].source.name;
+                        document.querySelector('.amazon-news-link-three').href = Amazon.articles[2].url;
+
+
+                        document.querySelector('.google-title').innerHTML = Google.articles[0].title;
+                        document.querySelector('.google-site-name').innerHTML = Google.articles[0].source.name;
+                        document.querySelector('.google-news-link').href = Google.articles[0].url;
+                        document.querySelector('.google-title-two').innerHTML = Google.articles[2].title;
+                        document.querySelector('.google-site-name-two').innerHTML = Google.articles[2].source.name;
+                        document.querySelector('.google-news-link-two').href = Google.articles[2].url;
+                        document.querySelector('.google-title-three').innerHTML = Google.articles[3].title;
+                        document.querySelector('.google-site-name-three').innerHTML = Google.articles[3].source.name;
+                        document.querySelector('.google-news-link-three').href = Google.articles[3].url;
+
+
+                        document.querySelector('.meta-title').innerHTML = Meta.articles[0].title;
+                        document.querySelector('.meta-site-name').innerHTML = Meta.articles[0].source.name;
+                        document.querySelector('.meta-news-link').href = Meta.articles[0].url;
+                        document.querySelector('.meta-title-two').innerHTML = Meta.articles[3].title;
+                        document.querySelector('.meta-site-name-two').innerHTML = Meta.articles[3].source.name;
+                        document.querySelector('.meta-news-link-two').href = Meta.articles[2].url;
+                        document.querySelector('.meta-title-three').innerHTML = Meta.articles[4].title;
+                        document.querySelector('.meta-site-name-three').innerHTML = Meta.articles[4].source.name;
+                        document.querySelector('.meta-news-link-three').href = Meta.articles[4].url;
+
+                        
+
+                } catch(error) {
+                        console.error(error)
+
+        }
+}
+        
+              
+
+ 
     
- 
- 
+
 
         
-
-
-
-
 
 
 
@@ -163,13 +245,11 @@ function fundHome() {
         window.location.href = "/commodities.html"
 }
 
+
+
 function forexHomeDisplayPage() {
         window.location.href = "/forex.html"
 }
-
-
-
-
 
 
 

@@ -8,6 +8,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+
 
 
 :root {
@@ -57,7 +69,7 @@ body {
 
 
 
-/*------------------------HEADER---------------------------*/
+/*-----------------------------------HEADER----------------------------------------*/
 
 
 .top-content {
@@ -90,7 +102,7 @@ body {
 
 
 
-/*------------------------NAVBAR---------------------------*/
+/*--------------------------------------NAVBAR--------------------------------------------------*/
 
 .content-nav {
     display: flex;
@@ -117,7 +129,7 @@ body {
 }
 
 .content-nav img {
-    width: 90px;
+    width: 38px;
     height: 30px;
     object-fit: contain;
     
@@ -171,8 +183,7 @@ body {
 
 
 
-
-/*------------------------CONTENT--------------------------------------------------------------*/
+/*-------------------------------APPLE CONTENT------------------------------------------------*/
 
 
 .Grid-Container {
@@ -182,7 +193,7 @@ body {
     width: 100%;
     height: 280px;
     background-color: var(--black);
-    margin-block: 45px;
+    margin-block: 10px;
     overflow: hidden;
 
 }
@@ -214,6 +225,7 @@ body {
     font-size: 2rem;
     color:var(--white);
     font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -279,8 +291,8 @@ body {
 
 .stock-range {
    position: absolute;
-   top:324px;
-   left: 345px;
+   top:290px;
+   left: 350px;
    font-size: 1.2rem;
 }
 
@@ -300,21 +312,22 @@ body {
     overflow: hidden;
     height: 420px;
     border-radius:10px;
-    max-width: 95%;
+    max-width: 80%;
 }
 
 .Grid-Container-Content .about-header {
     margin-top: 30px;
     margin-left: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
 }
 
 .grid-content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1000px;
-    align-content:baseline;
+    grid-template-columns: 145px 145px 145px 145px 145px;
+    max-width: 900px;
+    align-content:center;
     justify-content: space-evenly;
     margin-block: 30px;
     margin-left: 20px;
@@ -373,10 +386,11 @@ p.description-text  {
     justify-content: center;
     gap:10px;
     height: 200px;
-    max-width: 430px;
-    margin-left: 1000px;
-    margin-top: -319px;
+    max-width: 390px;
+    margin-left: 900px;
+    margin-top: -335px;
     overflow: hidden;
+    
 }
 
 
@@ -402,6 +416,170 @@ p.description-text  {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
 }
+
+
+
+
+.Apple-News-Container {
+    width: 20%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+.Apple-News-Wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content:center;
+    justify-content: center;
+    gap:15px;
+    position: absolute;
+    top:420px;
+    right:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:green;
+    text-align: center;
+    animation-name: appleNews;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes appleNews {
+    from {top:420px}
+    to {top: 440px}
+}
+
+
+.Apple-News-Wrapper > div {
+    text-align: right;
+    background-color:whitesmoke;
+    border-radius:10px;
+    height: 110px;
+    font-size: 0.89rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+.apple-news-section {
+    width: 245px;
+}
+
+.apple-news-section .apple-title {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+.apple-news-section .apple-title-two {
+    font-size: 0.7rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+
+.apple-news-section .apple-title-three {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+
+
+.apple-news-section .apple-news-link {
+    margin-top:-90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.apple-news-section  .apple-news-link-two {
+    margin-top:90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.apple-news-section  .apple-news-link-three {
+    margin-top:110px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.apple-site-name {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:purple;
+    font-weight: bold;
+}
+
+
+.apple-site-name-two {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:coral;
+    font-weight: bold;
+}
+
+
+.apple-site-name-three {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:skyblue;
+    font-weight: bold;
+    cursor:none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -525,10 +703,10 @@ p.description-text  {
 
 
 
-
-.amazon-stock-range {
+.amazon-stock-range
+ {
     position: absolute;
-    top:1145px;
+    top:1075px;
     left: 325px;
     font-size: 1.2rem;
  }
@@ -553,7 +731,7 @@ p.description-text  {
     overflow: hidden;
     height: 420px;
     border-radius:10px;
-    max-width: 95%;
+    max-width: 80%;
 }
 
 
@@ -561,17 +739,18 @@ p.description-text  {
 .Amazon-Grid-Container-Content .amazon-about-header {
     margin-top: 30px;
     margin-left: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
 }
 
 
 
 .amazon-grid-content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1000px;
-    align-content:baseline;
+    grid-template-columns: 145px 145px 145px 145px 145px;
+    max-width: 900px;
+    align-content:center;
     justify-content: space-evenly;
     margin-block: 30px;
     margin-left: 20px;
@@ -634,10 +813,11 @@ p.amazon-description-text  {
     justify-content: center;
     gap:10px;
     height: 200px;
-    max-width: 430px;
-    margin-left: 1000px;
-    margin-top: -280px;
+    max-width: 390px;
+    margin-left: 900px;
+    margin-top: -300px;
     overflow: hidden;
+    
 }
 
 
@@ -664,6 +844,170 @@ p.amazon-description-text  {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
 }
+
+
+
+
+.Amazon-News-Container {
+    width: 20%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+.Amazon-News-Wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content:center;
+    justify-content: center;
+    gap:15px;
+    position: absolute;
+    top:1200px;
+    right:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:coral;
+    text-align: center;
+    animation-name: amazonNews;
+    animation-duration: 1.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes amazonNews {
+    from {top: 1200px}
+    to {top: 1220px}
+}
+
+
+
+
+.Amazon-News-Wrapper > div {
+    text-align: right;
+    background-color:whitesmoke;
+    border-radius:10px;
+    height: 110px;
+    font-size: 0.89rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+.amazon-news-section {
+    width: 245px;
+}
+
+.amazon-news-section .amazon-title {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+.amazon-news-section .amazon-title-two {
+    font-size: 0.7rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+
+.amazon-news-section .amazon-title-three {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+
+
+.amazon-news-section .amazon-news-link {
+    margin-top:-90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.amazon-news-section  .amazon-news-link-two {
+    margin-top:90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.amazon-news-section  .amazon-news-link-three {
+    margin-top:110px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.amazon-site-name {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:purple;
+    font-weight: bold;
+}
+
+
+.amazon-site-name-two {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:coral;
+    font-weight: bold;
+}
+
+
+.amazon-site-name-three {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:skyblue;
+    font-weight: bold;
+    cursor:none;
+}
+
+
+
+
+
 
 
 
@@ -798,7 +1142,7 @@ p.amazon-description-text  {
 
 .google-stock-range {
     position: absolute;
-    top:1906px;
+    top:1836px;
     left: 340px;
     font-size: 1.2rem;
  }
@@ -819,7 +1163,7 @@ p.amazon-description-text  {
     overflow: hidden;
     height: 420px;
     border-radius:10px;
-    max-width: 95%;
+    max-width: 80%;
 }
 
 
@@ -827,8 +1171,10 @@ p.amazon-description-text  {
 .Google-Grid-Container-Content .google-about-header {
     margin-top: 30px;
     margin-left: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+
 }
 
 
@@ -836,8 +1182,8 @@ p.amazon-description-text  {
 
 .google-grid-content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1000px;
+    grid-template-columns: 145px 145px 145px 145px 145px;
+    max-width: 900px;
     align-content:baseline;
     justify-content: space-evenly;
     margin-block: 30px;
@@ -899,10 +1245,12 @@ p.google-description-text  {
     justify-content: center;
     gap:10px;
     height: 200px;
-    max-width: 430px;
-    margin-left: 1000px;
+    max-width: 390px;
+    margin-left: 900px;
     margin-top: -270px;
     overflow: hidden;
+
+
 }
 
 
@@ -927,6 +1275,160 @@ p.google-description-text  {
     font-weight: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
+}
+
+
+
+
+.Google-News-Container {
+    width: 20%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+.Google-News-Wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content:center;
+    justify-content: center;
+    gap:15px;
+    position: absolute;
+    top:1990px;
+    right:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+    animation-name: googleNews;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes googleNews {
+    from {top:1990px}
+    to {top: 2010px}
+}
+
+.Google-News-Wrapper > div {
+    text-align: right;
+    background-color:whitesmoke;
+    border-radius:10px;
+    height: 110px;
+    font-size: 0.89rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+.google-news-section {
+    width: 245px;
+}
+
+.google-news-section .google-title {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+.google-news-section .google-title-two {
+    font-size: 0.7rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+
+.google-news-section .google-title-three {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+
+
+.google-news-section .google-news-link {
+    margin-top:-90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.google-news-section  .google-news-link-two {
+    margin-top:90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.google-news-section  .google-news-link-three {
+    margin-top:110px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.google-site-name {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:purple;
+    font-weight: bold;
+}
+
+
+.google-site-name-two {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:coral;
+    font-weight: bold;
+}
+
+
+.google-site-name-three {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:skyblue;
+    font-weight: bold;
+    cursor:none;
 }
 
 
@@ -1064,7 +1566,7 @@ p.google-description-text  {
 
 .meta-stock-range {
     position: absolute;
-    top:2695px;
+    top:2625px;
     left: 350px;
     font-size: 1.2rem;
  }
@@ -1085,7 +1587,7 @@ p.google-description-text  {
     overflow: hidden;
     height: 420px;
     border-radius:10px;
-    max-width: 95%;
+    max-width: 80%;
 }
 
 
@@ -1093,8 +1595,10 @@ p.google-description-text  {
 .Meta-Grid-Container-Content .meta-about-header {
     margin-top: 45px;
     margin-left: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+
 }
 
 
@@ -1102,8 +1606,8 @@ p.google-description-text  {
 
 .meta-grid-content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1000px;
+    grid-template-columns: 145px 145px 145px 145px 145px;
+    max-width: 900px;
     align-content:baseline;
     justify-content: space-evenly;
     margin-block: 30px;
@@ -1150,7 +1654,7 @@ p.meta-description-text  {
     max-width: 850px;
     font-size: 0.9rem;
     font-family: 'Times New Roman', Times, serif;
-    color:black
+    color:grey
     
 }
 
@@ -1164,9 +1668,10 @@ p.meta-description-text  {
     gap:10px;
     height: 200px;
     max-width: 430px;
-    margin-left: 1000px;
+    margin-left: 900px;
     margin-top: -310px;
     overflow: hidden;
+    
 }
 
 
@@ -1192,5 +1697,1056 @@ p.meta-description-text  {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
 }
+
+
+
+
+
+
+.Meta-News-Container {
+    width: 20%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+.Meta-News-Wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content:center;
+    justify-content: center;
+    gap:15px;
+    position: absolute;
+    top:2760px;
+    right:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:blue;
+    text-align: center;
+    animation-name: metaNews;
+    animation-duration: 1.4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes metaNews {
+    from {top:2760px}
+    to {top: 2770px}
+}
+
+
+
+
+.Meta-News-Wrapper > div {
+    text-align: right;
+    background-color:whitesmoke;
+    border-radius:10px;
+    height: 110px;
+    font-size: 0.89rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+.meta-news-section {
+    width: 245px;
+}
+
+.meta-news-section .meta-title {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+.meta-news-section .meta-title-two {
+    font-size: 0.7rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+
+.meta-news-section .meta-title-three {
+    font-size: 0.8rem;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:dodgerblue;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+
+
+.meta-news-section .meta-news-link {
+    margin-top:-90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meta-news-section  .meta-news-link-two {
+    margin-top:90px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meta-news-section  .meta-news-link-three {
+    margin-top:110px;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Aref Ruqaa Ink", serif;
+    color:var(--grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.meta-site-name {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:orange;
+    font-weight: bold;
+}
+
+
+.meta-site-name-two {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:skyblue;
+    font-weight: bold;
+}
+
+
+.meta-site-name-three {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    color:green;
+    font-weight: bold;
+    cursor:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------LAPTOP SCREEN SIZE  769pX - 1024PX --------------------------*/
+
+@media screen and (max-width:1100px) {
+
+
+    
+
+    .content-nav img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+.Grid-Container img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 110px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container div {
+    color:var(--white)
+}
+
+
+
+.stock-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+.stock-name-text {
+    font-size: 1.5rem;
+    color:var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.stock-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -75px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+.stock-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.text-border {
+    color:white;;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: -20px;
+    margin-left: 200px;
+}
+
+
+.stock-price-text {
+    color:var(--white);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+.stock-range {
+    position: absolute;
+    top:250px;
+    left: 330px;
+    font-size: 1.2rem;
+ }
+
+
+.Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 730px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+
+
+
+
+.grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+
+.Grid-Container-Content .description {
+    margin-left: 50px;
+}
+
+
+
+.Right-Side-Wrapper {
+    display:none
+
+}
+
+.Apple-News-Container {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.Grid-Container-Two {
+    margin-block: 90px;
+}
+
+
+.amazon-name {
+    margin-top: -140px;
+    font-size: 1.5rem;
+
+}
+
+.amazon-symbol-wrapper {
+    margin-top: -95px;
+}
+
+ .amazon-name-text {
+    font-size: 1.5rem;
+}
+
+.amazon-stock-price {
+    margin-left: 205px;
+    margin-top: -30px;
+    font-size: 1.3rem;
+}
+
+.amazon-stock-price-currency {
+    font-size: 1rem;
+    margin-left: -10px;
+}
+
+
+.amazon-stock-range {
+    position: absolute;
+    top:1390px;
+    right: 90px
+}
+
+
+
+
+
+
+
+
+.Amazon-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 730px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+.amazon-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+.Amazon-Right-Side-Wrapper {
+    display: none;
+}
+
+
+.Amazon-Grid-Container-Content .amazon-description {
+    margin-left: 50px;
+}
+
+
+.Amazon-News-Container {
+    display: none;
+}
+
+
+.Google-News-Container {
+    display: none;
+}
+
+
+.Meta-News-Container {
+    display: none;
+}
+
+
+
+
+
+.Grid-Container-Three .google-name {
+    font-size: 1rem
+
+}
+
+.Google-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 630px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+
+.google-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+
+.Google-Right-Side-Wrapper {
+    display: none;
+}
+
+.Google-Grid-Container-Content .google-description {
+    margin-left: 50px;
+}
+
+
+.google-stock-range {
+    position: absolute;
+    top:2537px;
+    left: 310px;
+    font-size: 1.1rem;
+}
+ 
+ 
+
+.meta-stock-price {
+    margin-left: 170px;
+}
+
+.meta-stock-range {
+    position: absolute;
+    top:3535px;
+    left: 310px;
+}
+
+.Meta-Grid-Container-Content {
+        background-color: whitesmoke;
+        overflow: hidden;
+        height: 620px;
+        border-radius:10px;
+        max-width: 100%;
+    }
+
+
+.Meta-Grid-Container-Content .meta-description {
+    margin-left: 50px;
+}
+
+
+
+
+.Meta-Right-Side-Wrapper {
+    display: none;
+}
+
+.meta-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------TABLETS SCREEN SIZE  481PX - 768PX --------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .content-nav button {
+        font-size: var(--fontSizeTwo)
+    }
+
+    .content-nav img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+.Grid-Container img {
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 110px;
+    background: none;
+    overflow: hidden;
+}
+
+.Grid-Container div {
+    color:var(--white)
+}
+
+
+
+.stock-name {
+    margin-top: -110px;
+    margin-left: 210px;
+    color:var(--white);
+    font-weight: bold;
+}
+
+
+.stock-name-text {
+    font-size: 1.5rem;
+    color:var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.stock-symbol-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -75px;
+    margin-left: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+.stock-symbol-wrapper p {
+    margin:0px 7px;
+    text-align: center;
+   
+}
+
+.text-border {
+    color:white;;
+    height: 13px;
+    width: 3px;
+    border:2px solid lightgrey
+}
+
+
+.stock-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top: -20px;
+    margin-left: 200px;
+}
+
+
+.stock-price-text {
+    color:var(--white);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+.stock-range {
+    position: absolute;
+    top:250px;
+    left: 330px;
+    font-size: 1.2rem;
+ }
+
+
+.Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 730px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+
+
+
+
+.grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+
+.Grid-Container-Content .description {
+    margin-left: 50px;
+}
+
+
+
+.Right-Side-Wrapper {
+    display:none
+
+}
+
+.Apple-News-Container {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.Grid-Container-Two {
+    margin-block: 90px;
+}
+
+
+.amazon-name {
+    margin-top: -140px;
+    font-size: 1.5rem;
+
+}
+
+.amazon-symbol-wrapper {
+    margin-top: -95px;
+}
+
+ .amazon-name-text {
+    font-size: 1.5rem;
+}
+
+.amazon-stock-price {
+    margin-left: 205px;
+    margin-top: -30px;
+    font-size: 1.3rem;
+}
+
+.amazon-stock-price-currency {
+    font-size: 1rem;
+    margin-left: -10px;
+}
+
+
+.amazon-stock-range {
+    position: absolute;
+    top:1390px;
+    right: 90px
+}
+
+
+
+
+
+
+
+
+.Amazon-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 730px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+.amazon-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+.Amazon-Right-Side-Wrapper {
+    display: none;
+}
+
+
+.Amazon-Grid-Container-Content .amazon-description {
+    margin-left: 50px;
+}
+
+
+.Amazon-News-Container {
+    display: none;
+}
+
+
+.Google-News-Container {
+    display: none;
+}
+
+
+.Meta-News-Container {
+    display: none;
+}
+
+
+
+
+
+.Grid-Container-Three .google-name {
+    font-size: 1rem
+
+}
+
+.Google-Grid-Container-Content {
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 630px;
+    border-radius:10px;
+    max-width: 100%;
+}
+
+
+.google-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+
+.Google-Right-Side-Wrapper {
+    display: none;
+}
+
+.Google-Grid-Container-Content .google-description {
+    margin-left: 50px;
+}
+
+
+.google-stock-range {
+    position: absolute;
+    top:2537px;
+    left: 310px;
+    font-size: 1.1rem;
+}
+ 
+ 
+
+.meta-stock-price {
+    margin-left: 170px;
+}
+
+.meta-stock-range {
+    position: absolute;
+    top:3535px;
+    left: 310px;
+}
+
+.Meta-Grid-Container-Content {
+        background-color: whitesmoke;
+        overflow: hidden;
+        height: 620px;
+        border-radius:10px;
+        max-width: 100%;
+    }
+
+
+.Meta-Grid-Container-Content .meta-description {
+    margin-left: 50px;
+}
+
+
+
+
+.Meta-Right-Side-Wrapper {
+    display: none;
+}
+
+.meta-grid-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content:start;
+    justify-content: space-evenly;
+    margin-block: 30px;
+    margin-left: 50px;
+    gap:30px
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------MOBILE SCREEN SIZE  320PX - 480PX --------------------------*/
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+
+    .top-content {
+        font-size: 0.8rem;
+        margin-block: 20px;
+    }
+    
+    .top-content img {
+        object-fit: contain;
+        height: 50px;
+        margin:0px 15px
+    }
+    
+    
+    .top-content h1 {
+        font-family: "Aref Ruqaa Ink", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .content-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap:23px;
+        margin-block: 30px;
+     
+    }
+
+    .content-nav button {
+        border:none;
+        outline:none;
+        background: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+        
+    }
+    
+    
+    
+    .Grid-Container {
+        margin-block: 50px;
+    }
+    
+    .Grid-Container .stock-name-text {
+        font-size: 1.2rem;
+    }
+    
+    
+    .Grid-Container .stock-price-text {
+        font-size: 1.1rem;
+    }
+
+    .Grid-Container-Content {
+        height: 770px;
+    }
+
+   .Grid-Container-Content .description-text {
+        font-size: 0.73rem;
+        font-family: 'Times New Roman', Times, serif;
+        color:black;
+        
+    }
+
+    .Grid-Container-Content .about-header,
+    .Amazon-Grid-Container-Content .amazon-about-header,
+    .Google-Grid-Container-Content .google-about-header,
+    .Meta-Grid-Container-Content .meta-about-header
+     {
+        font-size: 0.9rem;
+    }
+    
+
+    .Grid-Container .stock-name-text {
+        font-size: 1.4rem;
+    }
+    
+    .stock-range {
+        position: absolute;
+        top:514px;
+        left: 315px;
+        font-size: 1rem;
+    }
+    
+    
+    
+     .Grid-Container-Two .amazon-name-text {
+        font-size: 1.3rem;
+    }
+
+    .amazon-symbol-wrapper {
+        width: 130px;
+    }
+    
+  
+    
+    .amazon-stock-price {
+        font-size: 0.9rem;
+        margin-top: -50px;
+        margin-left: 205px;
+       
+    }
+    
+    .amazon-stock-price-currency {
+        margin-left: 0px;
+        width: 110px;
+    }
+    
+    .amazon-stock-range {
+        position: absolute;
+        top:1727px;
+        left: 310px;
+        font-size: 1rem;
+    }
+
+    .Amazon-Grid-Container-Content {
+        height: 720px;
+    }
+    
+   
+    .Amazon-Grid-Container-Content .amazon-description-text {
+        font-size: 0.73rem;
+        font-family: 'Times New Roman', Times, serif;
+        color:black;
+    }
+
+
+
+    
+    
+    .Grid-Container-Three .google-name-text {
+        font-size: 1.3rem;
+    }
+    
+    .Grid-Container-Three .google-stock-price-text {
+        font-size: 1.2rem;
+    }
+    
+    .google-symbol-wrapper {
+        font-size: 0.6rem;
+        margin-top: -70px;
+    
+    }
+    
+    
+    .google-stock-price{
+        margin-left: 190px;
+        margin-top: -20px;
+    
+    }
+    
+    .google-stock-range {
+        position: absolute;
+        top:2850px;
+        left: 320px;
+        font-size: 1rem;
+    }
+    
+    
+
+
+    .Google-Grid-Container-Content {
+        height: 690px;
+    }
+
+    .Google-Grid-Container-Content .google-description-text {
+        font-size: 0.73rem;
+        font-family: 'Times New Roman', Times, serif;
+        color:black;
+    }
+
+
+
+
+    .Grid-Container-Four .meta-name-text {
+        font-size: 1.3rem;
+    }
+    
+    .Grid-Container-Four .meta-stock-price-text {
+        font-size: 1.2rem;
+    }
+    
+    .meta-symbol-wrapper {
+        font-size: 0.6rem;
+        margin-top: -70px;
+    
+    }
+    
+    
+    .meta-stock-price {
+       margin-top: -15px;
+       
+    
+    }
+    
+    .meta-stock-range {
+        position: absolute;
+        top:3915px;
+        left: 340px;
+        font-size: 1rem;
+    }
+    
+
+    .Meta-Grid-Container-Content {
+        height: 751px;
+    }
+    
+    .Meta-Grid-Container-Content .meta-description-text {
+        font-size: 0.73rem;
+        font-family: 'Times New Roman', Times, serif;
+        color:black;
+    }
+    
+    
+    
+
+
+}
+
+
 
 

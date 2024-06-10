@@ -87,7 +87,7 @@ body {
 
 
 
-/*------------------------NAVBAR---------------------------*/
+/*------------------------------NAVBAR------------------------------------*/
 
 .content-nav {
     display: flex;
@@ -96,12 +96,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
  
-    
 }
-
-
-
-
 
 
 .content-nav button {
@@ -114,7 +109,7 @@ body {
 }
 
 .content-nav img {
-    width: 90px;
+    width: 38px;
     height: 30px;
     object-fit: contain;
     
@@ -166,7 +161,7 @@ body {
 
 
 
-/*------------------------CONTENT---------------------------*/
+/*----------------------------------------CONTENT-------------------------------------------*/
 
 
 .Grid-Container {
@@ -200,9 +195,7 @@ body {
 }   
 
 @keyframes contentOne {
-   from {transform: rotateY(0deg);}
-   to {transform: rotateY(360deg);}
-
+    
 
 }
 
@@ -219,8 +212,7 @@ body {
 
 
 @keyframes contentTwo {
-    from {transform: rotateY(0deg)}
-    to {transform: rotateY(360deg)}
+    
 }
 
 
@@ -234,8 +226,6 @@ body {
 }   
 
 @keyframes contentThree {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(360deg);}
 }
 
 
@@ -395,4 +385,220 @@ body {
 
 
 
+
+
+
+
+    
+
+/*--------------------------MOBILE SCREEN LAYOUT ----------------------*/
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        
+    .top-content {
+        font-size: 0.8rem;
+    }   
+
+    .top-content img {
+         object-fit: contain;
+        height: 30px;
+        margin:0px 7px;
+    }
+
+
+    .content-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap:23px;
+        margin-block: 30px;
+     
+    }
+
+    .content-nav button {
+        border:none;
+        outline:none;
+        background: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+        
+    }
+
+
+    
+    .content-nav img {
+        width: 13px;
+        height: 19px;
+        object-fit: contain;
+        
+    }
+
+
+    .content-nav  button.home-btn {
+        background-color:white;
+        color:darkgreen;
+    }
+
+
+    .content-nav button.stock-btn:focus,
+    .content-nav button.crypto-btn:focus ,
+    .content-nav button.fund-btn:focus,
+    .content-nav button.forex-btn:focus {
+        background-color:white;
+        color:darkgreen;
+    }
+ 
+
+
+    .Grid-Container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px;
+        gap:100px;
+        text-align: center;
+        align-content: center;
+        margin-block: 90px;
+    }
+    
+    
+    .Grid-Container img {
+        object-fit: contain;
+        background:none;
+        height: 80px;
+        width: 110px;
+        
+    }
+
+
+    .Grid-Container .content {
+        animation-name: mobileContent;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
+        animation-duration: 1s;
+        animation-direction:alternate
+    }
+
+
+    @keyframes mobileContent {
+        from {transform: rotateX(0deg)};
+        to {transform: rotateX(180deg);}
+    }
+
+
+    .Grid-Container .content-two {
+        animation-name: mobileContentTwo;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
+        animation-duration: 0.9s;
+        animation-direction:alternate
+    }
+
+
+    @keyframes mobileContentTwo {
+        from {transform: rotateY(0deg)};
+        to {transform: rotateY(180deg);}
+    }
+
+
+
+
+    .Grid-Container .content-three {
+        animation-name: mobileContentThree;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
+        animation-duration: 0.9s;
+        animation-direction:alternate
+    }
+    
+
+    @keyframes mobileContentThree {
+        from {transform: rotateY(0deg)};
+        to {transform: rotateY(180deg);}
+    }
+
+
+    .Grid-Image {
+        display: grid;
+        align-content:center;
+        overflow: hidden;
+        transition: 3s ease-in-out;
+    }
+
+    .Grid-Image img {
+        width:150px
+    }
+
+
+    .Grid-Container-Two {
+        display: grid;
+        align-content:center;
+        text-align: center;
+        padding:10px 90px;
+        transition: 3s ease-in-out;
+     
+    }
+    
+    
+    .Grid-Container-Two h3 {
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color:var(--black);
+        font-size: 2rem;
+    }
+
+    .Grid-Container-Two h4 {
+        font-size: 1.4rem;
+    }
+
+
+
+    .Grid-Container-Two .gc-content {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    .Footer-Container {
+        background-color:white;
+        width: 100%;
+    }
+
+
+    .Footer-Container h1 {
+        font-size: 1.3rem;
+    }
+
+    .Footer-Container img {
+        height:50px;
+    }
+
+    .Footer-Container h3 {
+        font-size: 0.9rem;
+    }
+    
+
+    .Footer-Container address {
+        font-size: 0.9rem;
+    }
+
+    .Footer-Container .footer-text {
+        font-size: 0.7rem;
+    }
+
+    .Footer-Container .copyright {
+        color:black
+    }
+
+
+
+
+    
+    
+
+    
+
+
+
+    }
 
