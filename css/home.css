@@ -480,42 +480,47 @@ body {
     }
 
 
-    @keyframes mobileContent {
-        from {transform: rotateX(0deg)};
-        to {transform: rotateX(180deg);}
-    }
+    
+        @keyframes mobileContent {
+            from{transform: rotateY(0deg);}
+            to {transform: rotateY(180deg);}
+        }
+    
+    
+        .Grid-Container .content-two {
+            animation-name: mobileContentTwo;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-duration: 0.9s;
+            animation-direction:alternate
+        }
+    
+    
+        @keyframes mobileContentTwo {
+            from {transform: rotateX(0deg)};
+            to {transform: rotateX(180deg);}
+        }
+    
+    
+    
+    
+        .Grid-Container .content-three {
+            animation-name: mobileContentThree;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-duration: 0.9s;
+            animation-direction:alternate
+        }
+        
+    
+        @keyframes mobileContentThree {
+            from {transform: rotateX(0deg)};
+            to {transform: rotateX(180deg);}
+        }
 
 
-    .Grid-Container .content-two {
-        animation-name: mobileContentTwo;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in-out;
-        animation-duration: 0.9s;
-        animation-direction:alternate
-    }
-
-
-    @keyframes mobileContentTwo {
-        from {transform: rotateY(0deg)};
-        to {transform: rotateY(180deg);}
-    }
-
-
-
-
-    .Grid-Container .content-three {
-        animation-name: mobileContentThree;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in-out;
-        animation-duration: 0.9s;
-        animation-direction:alternate
-    }
     
 
-    @keyframes mobileContentThree {
-        from {transform: rotateY(0deg)};
-        to {transform: rotateY(180deg);}
-    }
 
 
     .Grid-Image {
@@ -545,11 +550,11 @@ body {
         font-weight: 100;
         font-style: normal;
         color:var(--black);
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .Grid-Container-Two h4 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
 

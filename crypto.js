@@ -6,16 +6,19 @@
 
   const cryptoData = async () => {
         try {
-            const cryptoAPI_KEY = ''
-            const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${cryptoAPI_KEY}`);
-            const responseTwo = await fetch(`https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${cryptoAPI_KEY}`);
-            const response3 = await fetch(`https://financialmodelingprep.com/api/v3/quote/T99USD?apikey=${cryptoAPI_KEY}`);
-            const crypto = await response.json()
-            const ethereum = await responseTwo.json()
-            const tether = await response3.json()
-            console.log(crypto)
-            console.log(ethereum)
-            console.log(tether)
+            const cryptoAPI_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8'
+            const cryptoResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${cryptoAPI_KEY}`);
+            const ethereumResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${cryptoAPI_KEY}`);
+            const tetherResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/T99USD?apikey=${cryptoAPI_KEY}`);
+            const crypto = await cryptoResponse.json();
+            const ethereum = await ethereumResponse .json();
+            const tether = await tetherResponse.json();
+
+            console.log(`Network Status Is Ok: ${cryptoResponse.status}`, crypto);
+            console.log(`Network Status is Ok: ${ethereumResponse.status}`, ethereum);
+            console.log(`Network Status is Ok: ${tetherResponse.status}`, tether)
+
+            
 
             //push data from the Full Crypto Quote API
             document.querySelector('.bitcoin-name-text').innerHTML = crypto[0].name;
@@ -66,15 +69,15 @@
 
 
         } catch(error) {
-            console.log(`Error: ${response.status}: ${response.statusText}`)
+            console.error(error.message)
         }
   }
 
-    
-      
-   
 
-  
+      
+    cryptoData()
+ 
+
  
 
 

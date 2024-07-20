@@ -9,16 +9,19 @@
 
     const Commodity = async () => {
         try {
-            const API_KEY = '';
-            const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/PDBC?apikey=${API_KEY}`);
-            const responseTwo = await fetch(`https://financialmodelingprep.com/api/v3/quote/FTGC?apikey=${API_KEY}`);
-            const response3 = await fetch(`https://financialmodelingprep.com/api/v3/quote/DBC?apikey=${API_KEY}`);
-            const commodity = await response.json();
-            const global = await responseTwo.json()
-            const dbc = await response3.json()
-            console.log(commodity);
-            console.log(global)
-            console.log(dbc)
+            const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8';
+            const commodityResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/PDBC?apikey=${API_KEY}`);
+            const globalResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/FTGC?apikey=${API_KEY}`);
+            const  dbcResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/DBC?apikey=${API_KEY}`);
+            const commodity = await commodityResponse.json();
+            const global = await globalResponse.json()
+            const dbc = await dbcResponse.json()
+
+            console.log(`Network Response is Ok: ${commodityResponse.status}`, commodity);
+            console.log(`Network Response is Ok: ${globalResponse.status}`, global);
+            console.log(`Network Response is Ok: ${dbcResponse.status}`, dbc)
+
+            
 
             // push data to the dom from the Full Commodities Quote API
             document.querySelector('.pdbc-name-text').innerHTML = commodity[0].name;
@@ -49,14 +52,14 @@
 
 
         } catch(error) {
-            console.error(`Error`, error)
+            console.error(error.message)
         }
     }
 
   
 
-    
-    
+            Commodity()
+   
 
 
 

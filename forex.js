@@ -6,16 +6,18 @@
 
 async function forexData() {
     try {
-        const API_KEY = ''
-        const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/AUDTHB?apikey=${API_KEY}`);
-        const response2 = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDDKK?apikey=${API_KEY}`);
-        const response3 = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDGBP?apikey=${API_KEY}`);
-        const data = await response.json()
-        const forex = await response2.json()
-        const aedForex = await response3.json()
-        console.log(data);
-        console.log(forex)
-        console.log(aedForex)
+        const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8'
+        const dataResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/AUDTHB?apikey=${API_KEY}`);
+        const forexResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDDKK?apikey=${API_KEY}`);
+        const aedResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/AEDGBP?apikey=${API_KEY}`);
+        const data = await dataResponse.json()
+        const forex = await forexResponse.json()
+        const aedForex = await aedResponse.json()
+         
+        console.log(`Network is Ok: ${dataResponse.status}`, data);
+        console.log(`Network is Ok: ${forexResponse.status}`, forex);
+        console.log(`Network is Ok: ${aedResponse.status}`, aedForex)
+
 
     //push data to the DOM with the Full Forex Quote API
     document.querySelector('.aud-name-text').innerHTML = data[0].name;
@@ -67,13 +69,12 @@ async function forexData() {
 
 
     } catch(error) {
-        console.error(`Error: `, error)
+        console.error(error.message)
     }
 }
        
   
-    
-    
+    forexData()
 
 
 
