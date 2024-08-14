@@ -9,7 +9,7 @@
 
     const Commodity = async () => {
         try {
-            const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8';
+            const API_KEY = '';
             const commodityResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/PDBC?apikey=${API_KEY}`);
             const globalResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/FTGC?apikey=${API_KEY}`);
             const  dbcResponse = await fetch(`https://financialmodelingprep.com/api/v3/quote/DBC?apikey=${API_KEY}`);
