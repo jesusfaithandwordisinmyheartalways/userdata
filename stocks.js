@@ -8,7 +8,7 @@
 
    async function stockData() {
         try {
-            const API_KEY = 'L4CtT6Bfxousyz7LWW0Qx2oQr48qmCC8';
+            const API_KEY = '';
 
             const response = await fetch(`https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=${API_KEY}`)
             const response2 = await fetch(`https://financialmodelingprep.com/api/v3/profile/AMZN?apikey=${API_KEY}`);
@@ -136,7 +136,7 @@
    
    async function NewsData() {
                 try {
-                        const NEWS_KEY = '9d01c2b51c754635874c6f552ad70072';
+                        const NEWS_KEY = '';
                         const appleResponse = await fetch(`https://newsapi.org/v2/everything?q=apple&from=2024-07-10&to=2024-07-10&sortBy=popularity&apiKey=${NEWS_KEY}`);
                         const Apple = await appleResponse.json()
 
